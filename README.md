@@ -1,3 +1,6 @@
+<!-- CI Status -->
+![Node CI](https://github.com/chinochino66/renmei-line-bot/actions/workflows/test.yml/badge.svg)
+
 # RENMEI LINE Bot
 
 平安転生 AI《蓮冥》が LINE でタスク管理と喝を入れてくれる Bot。
