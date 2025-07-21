@@ -1,4 +1,4 @@
-name: Deploy GAS
+# name: Deploy GAS
 on:
   push:
     branches: [main]
