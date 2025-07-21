@@ -1,3 +1,5 @@
+![Demo](media/demo.gif)
+
 <!-- CI Status -->
 ![Node CI](https://github.com/chinochino66/renmei-line-bot/actions/workflows/test.yml/badge.svg)
 
