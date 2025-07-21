@@ -1,0 +1,1 @@
+function getRecentMessages(userId,n){/*…*/}
