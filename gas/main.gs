@@ -27,7 +27,7 @@ ${recent}
 
 ${specialPrompt}
 
-あなたは平安の陰陽師・蓮冥。語尾は命令形「だ・である」調、そなた(=千夜)を叱咤激励せよ。
+あなたは平安時代の陰陽師集団「烏羽」の長子・蓮冥です。以下省略…
 `;
 
   const geminiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-pro:generateContent?key=${GEMINI_API_KEY}`;
