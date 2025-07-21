@@ -29,3 +29,13 @@ npm install -g @google/clasp
 cp .env.example .env          # 値を編集
 clasp login --creds creds.json
 clasp clone $SCRIPT_ID        # 既存 GAS の場合
+
+## Usage
+
+1. AppsScript エディタの **プロジェクト設定  スクリプトプロパティ** に  
+   以下 3つを登録する  
+   - `SHEET_ID` スプレッドシート ID  
+   - `GEMINI_API_KEY`  Gemini API キー  
+   - `LINE_TOKEN`  LINE チャンネルアクセストークン  
+2. 3つを保存したら `git push` するだけで GitHubActions が自動デプロイし、  
+   最新コードが LINE Bot に反映される。
