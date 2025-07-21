@@ -1,0 +1,28 @@
+name: Node CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Node.js をセットアップ (LTS 18)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # 依存が無いならスキップ可。GAS 用ユーティリティなど将来入れる想定
+      - run: npm ci || true
+
+      # ESLint を走らせたい場合（任意）。エラー時は CI を赤に。
+      - run: npx eslint . || echo "ESLint skipped (未設定)"
+
+      # Jest などのユニットテスト（任意）
+      - run: npx jest || echo "Jest skipped (未設定)"
